@@ -265,7 +265,7 @@ function getTrackListAccepted(){
 
     $statuses = [
         1 => 'You created a job.',
-        2 => 'Your job has benn received.',
+        2 => 'Your job has been received.',
         3 => 'Document is ready.',
         5 => 'Document has been picked.'
     ];
@@ -276,7 +276,7 @@ function getTrackListAccepted(){
 
 function insertNotification($user_id, $title, $message){
 
-    $sql = "INSERT INTO notification (user_id,seen,title,message) VALUES ($user_id, 0, '$title', '$message')";
+    $sql = "INSERT INTO notifications (user_id,seen,title,messages) VALUES ($user_id, 0, '$title', '$message')";
 
     if (!$GLOBALS['db']->query($sql)) {
         echo "Error: " . $sql . "<br>" . $GLOBALS['db']->error; exit();
