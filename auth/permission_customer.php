@@ -17,4 +17,8 @@
     $result = $db->query("SELECT *,accounts.id as account_id FROM users  LEFT JOIN  accounts ON users.id = accounts.user_id WHERE users.id=$user_id");
     $user = $result->fetch_assoc();
 
+
+    $noty_1 = $db->query("SELECT * FROM notifications WHERE seen=0 AND user_id=$user_id");
+    $noty_2 = $db->query("SELECT * FROM notifications WHERE seen=0 AND user_id=$user_id");
+
 ?>

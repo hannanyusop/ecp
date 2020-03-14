@@ -1,1 +1,7 @@
 /assets/uploads/
+
+.idea/
+
+DATABASE/._ecp.sql
+
+DATABASE/._notifications.sql
