@@ -12,7 +12,7 @@
                 <li>
                     <a href="dashboard.php">
                         <i class="fa fa-home"></i>
-                        <span> Dashoard </span>
+                        <span> Dashboard </span>
                     </a>
                 </li>
                 <li>
@@ -22,18 +22,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript: void(0);">
-                        <i class="fe-pocket"></i>
-                        <span> Apps </span>
-                        <span class="menu-arrow"></span>
+                    <a href="job-list.php">
+                        <i class="fa fa-list-ol"></i>
+                        <span> Job List </span>
                     </a>
-                    <ul class="nav-second-level" aria-expanded="false">
-                        <li>
-                            <a href="apps-kanbanboard.html">Kanban Board</a>
-                        </li>
-                    </ul>
                 </li>
-
+                <li>
+                    <a href="account.php">
+                        <i class="fa fa-money-bill-wave"></i>
+                        <span> Credit Transaction </span>
+                    </a>
+                </li>
             </ul>
 
         </div>
