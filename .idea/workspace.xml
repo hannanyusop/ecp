@@ -1,7 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0049f4c-3331-4c7e-8fc5-45adbd4c86ae" name="Default Changelist" comment="" />
+    <list default="true" id="a0049f4c-3331-4c7e-8fc5-45adbd4c86ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._auth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._env.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/._vendor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/._css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/._fonts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/._images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/._js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/._libs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/._uploads" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._attached-files" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._cards" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._companies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._jsgrid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._logo-sm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._macbook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._megamenu-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._multiple-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._products" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._small" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/._users" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583224573.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583224700.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583224744.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583224823.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583224865.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583245713.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583250946.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583251028.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583251073.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583251092.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583295408.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583295690.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583296055.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583296263.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583297364.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583301405.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583301641.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583301666.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583301789.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583301940.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583301973.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302017.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302027.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302046.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302056.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302091.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302169.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302246.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302446.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302466.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302580.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302716.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302746.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302801.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302877.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302898.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583302923.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583303100.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/._1583410484.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583224573.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583224700.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583224744.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583224823.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583224865.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583245713.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583250946.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583251028.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583251073.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583251092.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583295408.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583295690.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583296055.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583296263.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583297364.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583301405.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583301641.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583301666.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583301789.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583301940.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583301973.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302017.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302027.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302046.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302056.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302091.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302169.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302246.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302446.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302466.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302580.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302716.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302746.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302801.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302877.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302898.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583302923.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583303100.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uploads/1583410484.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._customer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._include" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._permission_customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._reset-password-request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._reset-password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._verify-signup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/._verify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._blank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._dashboard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._include" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._job-step-1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._job-step-2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._job-step-3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._job-step-4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._job-step-confirm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/._job-view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/customer/job-step-confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/customer/job-step-confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/include/._footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/include/._header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/._db_config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/._helper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/db_config.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +151,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -28,6 +169,7 @@
   </component>
   <component name="ProjectId" id="1Yag4Unt3kaEnUB4rwcBUaKnrcz" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/auth" />
   </component>
@@ -70,11 +212,23 @@
       <workItem from="1586087538977" duration="695000" />
       <workItem from="1546301034974" duration="6372000" />
       <workItem from="1583726290553" duration="4694000" />
+      <workItem from="1584206336256" duration="1223000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
