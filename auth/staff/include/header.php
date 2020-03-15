@@ -14,3 +14,11 @@
     <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
 </head>
+
+
+
+<?php
+    if(isset($_SESSION['locked'])){
+        echo "<script>alert('Locked!');window.location='lock-screen.php'</script>";
+    }
+?>
