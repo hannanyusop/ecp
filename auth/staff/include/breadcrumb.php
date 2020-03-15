@@ -8,7 +8,7 @@
                         <li class="breadcrumb-item"><a href="../dashboard.php">DASHBOARD</a></li>
                         <?php if(isset($links)){ ?>
                             <?php foreach ($links as $link => $name){ ?>
-                                <li class="breadcrumb-item"><a href="<?= $links ?>"><?= $name ?>></a></li>
+                                <li class="breadcrumb-item"><a href="<?= $link ?>"><?= $name ?></a></li>
                             <?php } ?>
                         <?php } ?>
                         <li class="breadcrumb-item active"><?= (isset($page_title))? $page_title : "" ?></li>
