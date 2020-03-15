@@ -52,6 +52,7 @@
 
                                     <button type="submit" class="btn btn-primary waves-effect waves-light mr-2">Search</button>
                                     <a href="customer-list.php" class="mr-2 btn btn-warning waves-effect waves-light">Reset</a>
+                                    <a href="customer-add.php" class="mr-2 btn btn-success waves-effect waves-light float-right">Add Customer</a>
                                 </form>
 
 
@@ -87,9 +88,6 @@
                                         <?php } ?>
                                         </tbody>
                                     </table>
-                                    <div class="text-center mt-3">
-                                        <small class="text-success font-weight-bold">Show more</small>
-                                    </div>
                                 </div> <!-- end .table-responsive-->
                             </div> <!-- end card-box -->
                         </div>

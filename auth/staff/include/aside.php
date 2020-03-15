@@ -27,6 +27,7 @@
                         <span> My Job </span>
                     </a>
                 </li>
+                <?php if($_SESSION['auth']['role'] == 1){ ?>
                 <li>
                     <a href="customer-list.php">
                         <i class="fa fa-user-friends"></i>
@@ -51,6 +52,7 @@
                         <span> System Setting </span>
                     </a>
                 </li>
+                <?php } ?>
             </ul>
 
         </div>

@@ -80,21 +80,21 @@ if(isset($_GET['id'])){
                                         <div class="form-group row mb-3">
                                             <label for="email" class="col-3 col-form-label">E-mail</label>
                                             <div class="col-9">
-                                                <input id="email" type="text" class="form-control" name="email">
+                                                <input id="email" type="email" class="form-control" name="email" value="<?= $cust['email']; ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group row mb-3">
                                             <label for="full_name" class="col-3 col-form-label">Full Name</label>
                                             <div class="col-9">
-                                                <input id="full_name" type="text" class="form-control" name="full_name">
+                                                <input id="full_name" type="text" class="form-control" name="full_name" value="<?= $cust['fullname']; ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group mb-0 justify-content-end row">
                                             <div class="col-9">
                                                 <button type="submit" name="submit" class="btn btn-info waves-effect waves-light">Update Setting</button>
-                                                <a href="option-list.php" class="btn btn-warning">Back</a>
+                                                <a href="customer-list.php" class="btn btn-warning">Back</a>
                                             </div>
                                         </div>
                                     </form>

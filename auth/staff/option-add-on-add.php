@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include_once('../permission_staff.php') ?>
+<?php include_once('../permission_manager.php') ?>
 <?php include('include/header.php'); ?>
 
 <?php
