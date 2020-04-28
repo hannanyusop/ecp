@@ -46,7 +46,6 @@
 
 
                                     <div class="text-center w-75 m-auto">
-                                        <img src="../../assets/images/users/user-1.jpg" height="88" alt="user-image" class="rounded-circle shadow">
                                         <h4 class="text-dark-50 text-center mt-3">Hi ! <?= $user['fullname'] ?> </h4>
                                         <p class="text-muted mb-4">Enter your password to access the admin.</p>
                                     </div>

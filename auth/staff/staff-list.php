@@ -6,6 +6,12 @@
 
 <?php
 
+$page_title = 'STAFF LIST';
+
+$links = [
+
+];
+
 if(isset($_GET['name']) && isset($_GET['role'])){
 
     $condition = "email LIKE '%$_GET[name]%'";
@@ -57,6 +63,8 @@ if(isset($_GET['name']) && isset($_GET['role'])){
 
                                     <button type="submit" class="btn btn-primary waves-effect waves-light mr-2">Search</button>
                                     <a href="staff-list.php" class="mr-2 btn btn-warning waves-effect waves-light">Reset</a>
+                                    <a href="staff-add.php" class="mr-2 btn btn-success waves-effect waves-light float-right">Add Staff</a>
+
                                 </form>
 
 

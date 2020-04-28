@@ -93,7 +93,7 @@ if(isset($_GET['id'])){
 
                                         <div class="form-group mb-0 justify-content-end row">
                                             <div class="col-9">
-                                                <button type="submit" name="submit" class="btn btn-info waves-effect waves-light">Update Setting</button>
+                                                <button type="submit" name="submit" class="btn btn-info waves-effect waves-light">Update Customer</button>
                                                 <a href="customer-list.php" class="btn btn-warning">Back</a>
                                             </div>
                                         </div>

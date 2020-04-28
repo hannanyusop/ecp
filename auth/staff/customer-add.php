@@ -8,12 +8,12 @@
 $page_title = 'CUSTOMER ADD';
 
 $links = [
-        'customer-list' => 'MANAGE CUSTOMER'
+        'customer-list.php' => 'MANAGE CUSTOMER'
 ];
 
 if(isset($_POST['submit'])){
 
-    if($_POST['email'] == '' || $_POST['name'] != ''){
+    if($_POST['email'] == '' || $_POST['full_name'] == ''){
         echo "<script>alert('Please insert required field!');window.location='customer-add.php'</script>";
     }
 

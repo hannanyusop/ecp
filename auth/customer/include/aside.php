@@ -33,6 +33,12 @@
                         <span> Credit Transaction </span>
                     </a>
                 </li>
+                <li>
+                    <a href="notification.php">
+                        <i class="fas fa-bell"></i>
+                        <span> Notification </span>
+                    </a>
+                </li>
             </ul>
 
         </div>

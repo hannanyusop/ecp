@@ -130,18 +130,20 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-12 text-center align-content-center">
-                                    <h4>Pickup Security Code: <?= $job['pickup_code'] ?>(DEMO)</h4>
+                            <?php if($job['status'] == 3){ ?>
+                                <div class="row">
+                                    <div class="col-12 text-center align-content-center">
+                                        <h4>Pickup Security Code: </h4>
 
-                                    <h4 class="font-weight-bold">081231723897</h4>
+                                        <h4 class="font-weight-bold"><?= $job['pickup_code'] ?></h4>
 
-                                    <p>or show this to counter</p>
-                                    <?php echo '<img class="mt-2 mb-2" src="data:image/png;base64,' . base64_encode($barCodePNG->getBarcode('081231723897', $barCodePNG::TYPE_CODE_128)) . '">'; ?>
-                                    <br>
-                                    <small class="text-info">Pickup Security Code will be generate after job completed.</small>
+                                        <p>or show this to counter</p>
+                                        <?php echo '<img class="mt-2 mb-2" src="data:image/png;base64,' . base64_encode($barCodePNG->getBarcode($job['pickup_code'], $barCodePNG::TYPE_CODE_128)) . '">'; ?>
+                                        <br>
+                                        <small class="text-info">Pickup Security Code will be generate after job completed.</small>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php } ?>
 
                             <ul class="timeline">
                                 <?php foreach (getTrackListAccepted() as $key => $status) {; ?>
