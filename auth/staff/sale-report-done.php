@@ -6,10 +6,9 @@
 
 <?php
 
-sendEmail('nan_s96@yahoo.com', 'Hannan', 'This is body');
 $page_title = 'SALE REPORT';
 
-$year = 2019;
+$year = date('Y');
 if(isset($_GET['year'])){
 
     #check if year is in range
@@ -52,7 +51,7 @@ $labels = json_encode(array_values(getStrMonth()));
             <div class="content-page">
                 <div class="content">
                     <?php include('include/breadcrumb.php'); ?>
-                    <div class="row">
+                    <div class="row" id="search">
                         <div class="col-md-12">
                             <div class="card-box">
 
@@ -74,14 +73,14 @@ $labels = json_encode(array_values(getStrMonth()));
                     </div>
 
                     <div class="row" id="print">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="card-box">
                                 <div class="content">
                                     <canvas id="count"></canvas>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-12">
                             <div class="card-box">
                                 <div class="content">
                                     <table class="table table-bordered">
@@ -159,15 +158,9 @@ $labels = json_encode(array_values(getStrMonth()));
                     $("#action-print").click(function(){
 
 
-                        // var canvas = document.getElementById("count");
-                        // var img    = canvas.toDataURL("image/png");
-                        // document.write('<img src="'+img+'"/>');
-
-                        var printContents = document.getElementById("print").innerHTML;
-                        var originalContents = document.body.innerHTML;
-                        document.body.innerHTML = printContents;
+                        $("#search").hide();
                         window.print();
-                        document.body.innerHTML = originalContents;
+                        $("#search").show();
                     });
 
 
