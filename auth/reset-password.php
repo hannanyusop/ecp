@@ -75,7 +75,7 @@
                                     </div>
 
                                     <div class="form-group mb-0 text-center">
-                                        <button name="forgot" class="btn btn-primary btn-block" type="submit"> Change Password </button>
+                                        <button name="reset" class="btn btn-primary btn-block" type="submit"> Change Password </button>
                                     </div>
 
                                 </form>

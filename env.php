@@ -26,7 +26,7 @@ $GLOBALS['APP_NAME'] = 'E-CENTER PRINTING';
 $GLOBALS['smtp_username'] = 'ecenterprinting@yahoo.com';
 $GLOBALS['smtp_password'] = 'idwfwfybfmqgkgfc';
 $GLOBALS['smtp_host'] = 'smtp.mail.yahoo.com';
-$GLOBALS['admin_email'] = 'nan_s96@yahoo.com';
+$GLOBALS['admin_email'] = 'ecenterprinting@yahoo.com';
 
 $GLOBALS['xampp_macos'] = true;
 $GLOBALS['send_email'] = true;

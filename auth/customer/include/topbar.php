@@ -21,7 +21,7 @@
                     <h5 class="m-0">
                         <form method="post">
                             <span class="float-right">
-                            <button type="submit" name="cls_noty_all" class="text-dark">
+                            <button type="submit" onclick="return confirm('Are you sure?')" name="cls_noty_all" class="text-dark">
                                 <small>Clear All</small>
                             </button>
                         </span>Notification
@@ -32,7 +32,7 @@
                 <div class="slimscroll noti-scroll">
 
                     <?php if($noty_1->num_rows > 0){ while($noty1 = $noty_1->fetch_assoc()){ ;?>
-                        <a class="dropdown-item notify-item" data-toggle="modal" data-target="#noty-<?=$noty1?>">
+                        <a class="dropdown-item notify-item" href="notification-view.php?id=<?=$noty1['id'] ?>">
                             <div class="notify-icon bg-primary">
                                 <i class="mdi mdi-comment-account-outline"></i>
                             </div>

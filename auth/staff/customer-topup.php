@@ -48,7 +48,7 @@
 
                 sleep(2);
 
-                echo "<script>alert('Customer account charged!');</script>";
+                echo "<script>alert('Customer account charged!');window.location='customer-list.php'</script>";
             }
 
         }

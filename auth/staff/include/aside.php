@@ -27,6 +27,12 @@
                         <span> My Job </span>
                     </a>
                 </li>
+                <li>
+                    <a href="notification.php">
+                        <i class="fas fa-bell"></i>
+                        <span> Notification </span>
+                    </a>
+                </li>
                 <?php if($_SESSION['auth']['role'] == 1){ ?>
                 <li>
                     <a href="customer-list.php">
@@ -34,13 +40,22 @@
                         <span> Manage Customer </span>
                     </a>
                 </li>
-                <li>
-                    <a href="sale-report.php">
+                <li class="active">
+                    <a href="javascript: void(0);" aria-expanded="true">
                         <i class="fa fa-chart-bar"></i>
                         <span> Sale Report </span>
+                        <span class="menu-arrow"></span>
                     </a>
+                    <ul class="nav-second-level collapse in" aria-expanded="false" style="">
+                        <li>
+                            <a href="sale-report-total.php">By Total Sale</a>
+                        </li>
+                        <li>
+                            <a href="sale-report-done.php">By Total Job Done</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+            <li>
                     <a href="staff-list.php">
                         <i class="fa fa-users-cog"></i>
                         <span> Manage Staff </span>
@@ -53,6 +68,7 @@
                     </a>
                 </li>
                 <?php } ?>
+
             </ul>
 
         </div>

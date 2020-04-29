@@ -29,8 +29,8 @@
 
                 $body = "Ops,<br><br>
                 <p>You've request to recover password on " . date("m/d/Y h:i:s a", time()) . " <i>IP ADDRESS: $_SERVER[REMOTE_ADDR]</i><br>
-                To recover password please click this <a href='http://$_SERVER[HTTP_HOST]/ecp/auth/forgot-password.php?key=$key'>Link</a>.
-                If link not working, copy 'http://$_SERVER[HTTP_HOST]/ecp/auth/forgot-password.php?key=$key' and paste to your browser's address bar.
+                To recover password please click this <a href='http://$_SERVER[HTTP_HOST]/ecp/auth/reset-password.php?key=$key'>Link</a>.
+                If link not working, copy 'http://$_SERVER[HTTP_HOST]/ecp/auth/reset-password.php?key=$key' and paste to your browser's address bar.
                  If you not request this, please call Customer Service 06-425635654543 or drop an email at ecenterprinting@yahoo.com</p>
                 
                 <br><br>
@@ -45,8 +45,8 @@
 
 
                 sendEmail($_POST['email'], "Recover Password", $body);
-                exit();
-//                echo "<script>alert('Please check your email.');window.location='login.php '</script>";
+//                exit();
+                echo "<script>alert('Please check your email.');window.location='login.php '</script>";
             }
 
         }

@@ -86,9 +86,6 @@ $result = $db->query("SELECT *,j.id as job_id,u.id as user_id FROM jobs as j LEF
                                         <?php } ?>
                                         </tbody>
                                     </table>
-                                    <div class="text-center mt-3">
-                                        <small class="text-success font-weight-bold">Show more</small>
-                                    </div>
                                 </div> <!-- end .table-responsive-->
                             </div> <!-- end card-box -->
                         </div>

@@ -57,7 +57,7 @@ if(isset($_POST['submit'])){
             <br><br>
             <small>";
 
-        sendEmail($_POST['email'], 'Welcome to ezPrint', $body);
+        il($_POST['email'], 'Welcome to ezPrint', $body);
         echo "<script>alert('Customer Created!');window.location='customer-add.php'</script>";
     }
 

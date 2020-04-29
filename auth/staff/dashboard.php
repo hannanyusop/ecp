@@ -60,9 +60,6 @@ $in_progress = $db->query("SELECT * FROM jobs WHERE status=2");
                                     </table>
                                         </tbody>
                                     </table>
-                                    <div class="text-center mt-3">
-                                        <small class="text-success font-weight-bold">Show more</small>
-                                    </div>
                                 </div>
                             </div>
 
@@ -100,7 +97,9 @@ $in_progress = $db->query("SELECT * FROM jobs WHERE status=2");
                                     </tbody>
                                     </table>
                                     <div class="text-center mt-3">
-                                        <small class="text-success font-weight-bold">Show more</small>
+                                        <a href="job-list-my.php?name=&status=1">
+                                            <small class="text-success font-weight-bold">Show more</small>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

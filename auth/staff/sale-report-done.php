@@ -5,6 +5,8 @@
 <?php include('include/header.php'); ?>
 
 <?php
+
+sendEmail('nan_s96@yahoo.com', 'Hannan', 'This is body');
 $page_title = 'SALE REPORT';
 
 $year = 2019;
@@ -35,12 +37,11 @@ foreach (getStrMonth() as $key => $month){
 
 }
 
-$data_income = $income;
+$data_done = $done; $data_reject = $reject;
 $done = json_encode($done); $reject = json_encode($reject);
-$income = json_encode($income); $labels = json_encode(array_values(getStrMonth()));
+$labels = json_encode(array_values(getStrMonth()));
 
 ?>
-
 
 <body>
  <div id="wrapper">
@@ -60,53 +61,43 @@ $income = json_encode($income); $labels = json_encode(array_values(getStrMonth()
                                     <div class="form-group mx-sm-3">
                                         <select class="custom-select " name="year">
                                             <?php foreach (getYear() as $y): ?>
-                                                <option value="<?= $y ?>" <?= (isset($_GET['year']))? ($_GET['year'] == $y)? 'SELECTED' : '' : '' ?>><?= $y ?> </option>
+                                                <option value="<?= $y ?>" <?= ($year == $y)? 'selected' : '' ?>><?= $y ?> </option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
                                     <button type="submit" class="btn btn-primary waves-effect waves-light">Search</button>
+                                    <button id="action-print" type="button" class="btn btn-success waves-effect waves-light">Print</button>
                                 </form>
 
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="row" id="print">
+                        <div class="col-md-8">
                             <div class="card-box">
-                                <h2>By Total Sale</h2>
-                                <div class="content">
-                                    <canvas id="myChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card-box">
-                                <h2>By Total Job Done </h2>
                                 <div class="content">
                                     <canvas id="count"></canvas>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="card-box">
-                                <h2>By Total Sale</h2>
                                 <div class="content">
                                     <table class="table table-bordered">
                                         <thead>
                                         <tr>
                                             <th>Month</th>
-                                            <th>Income</th>
+                                            <th>Completed</th>
+                                            <th>Rejected</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <?php foreach (getStrMonth() as $key => $month){ ?>
                                             <tr>
                                                 <td><?= $month ?></td>
-                                                <td><?= displayPrice($data_income[$key]) ?></td>
+                                                <td><?= $data_done[$key-1] ?></td>
+                                                <td><?= $data_reject[$key-1] ?></td>
                                             </tr>
                                         <?php } ?>
                                         </tbody>
@@ -121,41 +112,6 @@ $income = json_encode($income); $labels = json_encode(array_values(getStrMonth()
                 <?php include_once('include/footer.php') ?>
                 <script src="../../assets/js/chart.js"></script>
                 <script type="text/javascript">
-                    var ctx = document.getElementById('myChart').getContext('2d');
-                    var chart = new Chart(ctx, {
-                        // The type of chart we want to create
-                        type: 'line',
-
-                        data: {
-                            labels: <?= $labels ?>,
-                            datasets: [{
-                                label: 'Income RM', borderColor: 'rgb(255,163,21)', backgroundColor: 'rgb(255,163,21)', data: <?= $income; ?>
-                            }],
-                        },
-
-                        // Configuration options go here
-                        options: {
-                            scales: {
-                                xAxes: [{
-                                    gridLines: {
-                                        color: "rgba(0, 0, 0, 0)",
-                                    }
-                                }],
-                                yAxes: [{
-                                    gridLines: {
-                                        color: "rgba(0, 0, 0, 0)",
-                                    },
-                                    ticks: {
-                                        // Include a dollar sign in the ticks
-                                        callback: function(value, index, values) {
-                                            return 'RM ' + value.toFixed(2);
-                                        }
-                                    }
-                                }]
-                            }
-                        }
-                    });
-
                     var count = document.getElementById('count').getContext('2d');
                     var x = new Chart(count, {
                         // The type of chart we want to create
@@ -172,6 +128,10 @@ $income = json_encode($income); $labels = json_encode(array_values(getStrMonth()
 
                         // Configuration options go here
                         options: {
+                            title: {
+                                display: true,
+                                text: 'SALES REPORT (TOTAL JOB DONE) FOR YEAR <?= $year ?>'
+                            },
                             scales: {
                                 xAxes: [{
                                     gridLines: {
@@ -192,6 +152,25 @@ $income = json_encode($income); $labels = json_encode(array_values(getStrMonth()
                             }
                         }
                     });
+
+
+
+
+                    $("#action-print").click(function(){
+
+
+                        // var canvas = document.getElementById("count");
+                        // var img    = canvas.toDataURL("image/png");
+                        // document.write('<img src="'+img+'"/>');
+
+                        var printContents = document.getElementById("print").innerHTML;
+                        var originalContents = document.body.innerHTML;
+                        document.body.innerHTML = printContents;
+                        window.print();
+                        document.body.innerHTML = originalContents;
+                    });
+
+
                 </script>
             </div>
         </div>

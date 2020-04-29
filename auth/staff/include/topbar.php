@@ -15,7 +15,7 @@
                     <h5 class="m-0">
                         <form method="post">
                             <span class="float-right">
-                            <button type="submit" name="cls_noty_all" class="text-dark">
+                            <button type="submit" name="cls_noty_all" onclick="return confirm('Are you sure?')" class="text-dark">
                                 <small>Clear All</small>
                             </button>
                         </span>Notification

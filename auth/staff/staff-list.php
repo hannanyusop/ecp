@@ -91,7 +91,6 @@ if(isset($_GET['name']) && isset($_GET['role'])){
                                                 <td><?= $customer['last_login_at'] ?></td>
                                                 <td><?= $customer['last_ip_address'] ?></td>
                                                 <td>
-                                                    <a href="staff-view.php?id=<?= $customer['id']; ?>" class="font-weight-bold text-info">View</a> |
                                                     <a href="staff-edit.php?id=<?= $customer['id']; ?>" class="font-weight-bold text-success">Edit</a>
                                                 </td>
                                             </tr>
