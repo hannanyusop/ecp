@@ -38,6 +38,10 @@ if(isset($_POST['submit'])){
 
     $new = $_POST["new-password"];
 
+    if(strlen($new) < 5){
+        echo "<script>alert('Please enter at least 5 character!!');window.location='my-account.php'</script>";
+    }
+
     if (password_verify($old, $user['password'])) {
 
         if($new == $old){
@@ -113,21 +117,21 @@ if(isset($_POST['submit'])){
                                         <div class="form-group row mb-3">
                                             <label for="old-password" class="col-3 col-form-label">Old Password</label>
                                             <div class="col-9">
-                                                <input id="old-password" type="password" class="form-control" name="old-password" >
+                                                <input id="old-password" type="password" class="form-control" name="old-password" required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row mb-3">
                                             <label for="new-password" class="col-3 col-form-label">New Password</label>
                                             <div class="col-9">
-                                                <input id="new-password" type="password" class="form-control" name="new-password">
+                                                <input id="new-password" type="password" class="form-control" name="new-password" required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row mb-3">
                                             <label for="confirm-password" class="col-3 col-form-label">Confirm Password</label>
                                             <div class="col-9">
-                                                <input id="confirm-password" type="password" class="form-control" name="confirm-password">
+                                                <input id="confirm-password" type="password" class="form-control" name="confirm-password" required>
                                             </div>
                                         </div>
 
