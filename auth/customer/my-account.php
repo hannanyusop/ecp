@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 
     $fullname = strtoupper($_POST['full_name']);
 
-    if (!$db->query("UPDATE users SET fullname='$fullname', email = '$_POST[email]',role_id = $_POST[role] WHERE id=$user_id")) {
+    if (!$db->query("UPDATE users SET fullname='$fullname', email = '$_POST[email]' WHERE id=$user_id")) {
         echo "Error: Inserting user data." . $db->error; exit();
     }else{
 
