@@ -141,7 +141,7 @@ if(isset($_GET['id'])){
                         <div class="radio radio-info form-check-inline mb-2">
                             <div class="radio radio-success mr-2">
                                 <input type="radio" name="confirm_date" id="yes" value="1" required>
-                                <label for="yes">I'm okay with the</label>
+                                <label for="yes">I'm okay with the date</label>
                             </div>
 
                             <div class="radio radio-danger mr-2">
