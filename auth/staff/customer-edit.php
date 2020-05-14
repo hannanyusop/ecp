@@ -20,28 +20,29 @@ if(isset($_GET['id'])){
         echo "<script>alert('Customer not exist!');window.location='customer-list.php'</script>";
     }
 
-    if(isset($_POST['submit'])){
-
-
-        $check_q = $db->query("SELECT * FROM users WHERE email='$_POST[email]' AND id <> $_GET[id]");
-        $check = $check_q->fetch_assoc();
-
-        if($check){
-            echo "<script>alert('Email already exist!');window.location='customer-edit.php?id=$_GET[id]'</script>";
-        }
-
-        $fullname = strtoupper($_POST['full_name']);
-
-
-        if (!$db->query("UPDATE users SET fullname='$fullname', email = '$_POST[email]' WHERE id=$_GET[id]")) {
-            echo "Error: Inserting user data." . $db->error; exit();
-        }else{
-
-            #add customer account
-            echo "<script>alert('Customer information updated!');window.location='customer-list.php'</script>";
-        }
-
-    }elseif (isset($_POST['reset_password'])){
+//    if(isset($_POST['submit'])){
+//
+//
+//        $check_q = $db->query("SELECT * FROM users WHERE email='$_POST[email]' AND id <> $_GET[id]");
+//        $check = $check_q->fetch_assoc();
+//
+//        if($check){
+//            echo "<script>alert('Email already exist!');window.location='customer-edit.php?id=$_GET[id]'</script>";
+//        }
+//
+//        $fullname = strtoupper($_POST['full_name']);
+//
+//
+//        if (!$db->query("UPDATE users SET fullname='$fullname', email = '$_POST[email]' WHERE id=$_GET[id]")) {
+//            echo "Error: Inserting user data." . $db->error; exit();
+//        }else{
+//
+//            #add customer account
+//            echo "<script>alert('Customer information updated!');window.location='customer-list.php'</script>";
+//        }
+//
+//    }
+    if (isset($_POST['reset_password'])){
 
         $default_password = password_hash("secret", PASSWORD_BCRYPT);
 
@@ -80,23 +81,17 @@ if(isset($_GET['id'])){
                                         <div class="form-group row mb-3">
                                             <label for="email" class="col-3 col-form-label">E-mail</label>
                                             <div class="col-9">
-                                                <input id="email" type="email" class="form-control" name="email" value="<?= $cust['email']; ?>">
+                                                <input id="email" type="email" class="form-control" name="email" value="<?= $cust['email']; ?>" readonly>
                                             </div>
                                         </div>
 
                                         <div class="form-group row mb-3">
                                             <label for="full_name" class="col-3 col-form-label">Full Name</label>
                                             <div class="col-9">
-                                                <input id="full_name" type="text" class="form-control" name="full_name" value="<?= $cust['fullname']; ?>">
+                                                <input id="full_name" type="text" class="form-control" name="full_name" value="<?= $cust['fullname']; ?>" readonly>
                                             </div>
                                         </div>
-
-                                        <div class="form-group mb-0 justify-content-end row">
-                                            <div class="col-9">
-                                                <button type="submit" name="submit" class="btn btn-info waves-effect waves-light">Update Customer</button>
-                                                <a href="customer-list.php" class="btn btn-warning">Back</a>
-                                            </div>
-                                        </div>
+                                        
                                     </form>
                                 </div>
                             </div>
