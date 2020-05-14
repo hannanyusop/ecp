@@ -374,8 +374,8 @@ function insertNotification($user_id, $title, $message){
 }
 
 function getTimeAgo($timestamp){
-
-date_default_timezone_set("Asia/Kolkata");
+    
+date_default_timezone_set("Asia/Kuala_Lumpur");
   $time_ago        = strtotime($timestamp);
   $current_time    = time();
   $time_difference = $current_time - $time_ago;
