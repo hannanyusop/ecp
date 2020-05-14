@@ -18,7 +18,7 @@
     }else{
         $condition = "";
     }
-    $result = $db->query("SELECT *,j.id as job_id,u.id as user_id FROM jobs as j LEFT JOIN users as u ON j.customer_id=u.id "." $condition ORDER BY status ASC");
+    $result = $db->query("SELECT *,j.id as job_id,u.id as user_id,s.fullname as handled_by,u.fullname as cname,u.email as cemail FROM jobs as j LEFT JOIN users as u ON j.customer_id=u.id LEFT JOIN users as s ON j.staff_id=s.id "." $condition ORDER BY status ASC");
 
 ?>
 
@@ -66,6 +66,7 @@
                                             <th>E-mail</th>
                                             <th>Total Price</th>
                                             <th>Status</th>
+                                            <th>Handled By</th>
                                             <th>Created At</th>
                                             <th>Pickup Date</th>
                                             <th></th>
@@ -75,10 +76,11 @@
                                         <?php if($result->num_rows > 0){ while($job = $result->fetch_assoc()){ ;?>
                                             <tr>
                                                 <td><?= $job['job_id']; ?></td>
-                                                <td><?= $job['fullname']; ?></td>
-                                                <td><?= $job['email']; ?></td>
+                                                <td><?= $job['cname']; ?></td>
+                                                <td><?= $job['cemail']; ?></td>
                                                 <td><?= displayPrice($job['total_price']); ?></td>
                                                 <td><?= getJobStatus($job['status']) ?></td>
+                                                <td><?= $job['handled_by'] ?></td>
                                                 <td><?= $job['created_at'] ?></td>
                                                 <td><?= $job['pickup_date'] ?></td>
                                                 <td><a class="text-info font-weight-bold" href="job-view.php?id=<?= $job['job_id']; ?>">View</a> </td>
