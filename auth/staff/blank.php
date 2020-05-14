@@ -8,7 +8,6 @@
 $page_title = 'PAGE TITLE';
 
 $links = [
-        'example.link' => 'Example Title'
 ];
 
 ?>

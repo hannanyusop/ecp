@@ -8,7 +8,7 @@
 $page_title = 'PAGE TITLE';
 
 $links = [
-        'example.link' => 'Example Title'
+        'example.link' => ''
 ];
 
 $pending = $db->query("SELECT * FROM jobs WHERE status=1");

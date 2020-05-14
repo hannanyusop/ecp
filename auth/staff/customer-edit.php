@@ -91,7 +91,7 @@ if(isset($_GET['id'])){
                                                 <input id="full_name" type="text" class="form-control" name="full_name" value="<?= $cust['fullname']; ?>" readonly>
                                             </div>
                                         </div>
-                                        
+
                                     </form>
                                 </div>
                             </div>

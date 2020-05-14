@@ -8,7 +8,6 @@
 $page_title = 'SYSTEM SETTING';
 
 $links = [
-        'example.link' => 'Example Title'
 ];
 
 

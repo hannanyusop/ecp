@@ -9,7 +9,6 @@
     $page_title = 'JOB VIEW';
 
     $links = [
-            'example.link' => 'Example Title'
     ];
 
 
