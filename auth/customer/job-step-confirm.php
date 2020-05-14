@@ -56,7 +56,7 @@
 
     $body = "Customer Detail : $cq[fullname]<br>
             Job Cost : ".displayPrice($cq['total_price'])."<br>
-            Link : <a href='http://$_SERVER[HTTP_HOST]/auth/staff/job-view.php?id=$job_id'>http://$_SERVER[HTTP_HOST]/auth/staff/job-view.php?id=$job_id</a>
+            Link : <a href='http://$_SERVER[HTTP_HOST]/ecp/auth/staff/job-view.php?id=$job_id'>http://$_SERVER[HTTP_HOST]/auth/staff/job-view.php?id=$job_id</a>
             
             <br><br>
             <small>
