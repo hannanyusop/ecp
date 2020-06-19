@@ -53,6 +53,9 @@
                         <li>
                             <a href="sale-report-done.php">By Total Job Done</a>
                         </li>
+                        <li>
+                            <a href="sale-report-complete.php">By Total Job Done & Incomplete</a>
+                        </li>
                     </ul>
                 </li>
             <li>
