@@ -10,9 +10,9 @@
     if(isset($_GET['status']) && isset($_GET['name'])){
 
         if($_GET['status'] != ''){
-            $condition = "WHERE status = $_GET[status] AND email LIKE '%$_GET[name]%'";
+            $condition = "WHERE j.status = $_GET[status] AND u.email LIKE '%$_GET[name]%'";
         }else{
-            $condition = "WHERE email LIKE '%$_GET[name]%'";
+            $condition = "WHERE u.email LIKE '%$_GET[name]%'";
         }
 
     }else{
