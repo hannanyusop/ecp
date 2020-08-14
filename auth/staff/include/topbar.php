@@ -2,47 +2,6 @@
     <ul class="list-unstyled topnav-menu float-right mb-0">
 
 
-        <li class="dropdown notification-list">
-            <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <i class="fe-bell noti-icon"></i>
-
-                <?php if($noty_1->num_rows > 0){ ?>
-                <span class="badge badge-info rounded-circle noti-icon-badge"><?= $noty_1->num_rows ?></span>
-                <?php } ?>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-lg">
-                <div class="dropdown-item noti-title">
-                    <h5 class="m-0">
-                        <form method="post">
-                            <span class="float-right">
-                            <button type="submit" name="cls_noty_all" onclick="return confirm('Are you sure?')" class="text-dark">
-                                <small>Clear All</small>
-                            </button>
-                        </span>Notification
-                        </form>
-                    </h5>
-                </div>
-
-                <div class="slimscroll noti-scroll">
-
-                    <?php if($noty_1->num_rows > 0){ while($noty1 = $noty_1->fetch_assoc()){ ;?>
-                        <a class="dropdown-item notify-item" href="notification-view.php?id=<?=$noty1['id'] ?>">
-                            <div class="notify-icon bg-primary">
-                                <i class="mdi mdi-comment-account-outline"></i>
-                            </div>
-                            <p class="notify-details"><?= $noty1['title'] ?>
-                                <small class="text-muted"><?= strLimit($noty1['messages']); ?><small class="text-info"><?= getTimeAgo($noty1['created_at']) ?></small></small>
-                            </p>
-                        </a>
-
-                    <?php } }else { ?>
-                        <p  class="dropdown-item text-center text-primary notify-item notify-all">
-                            No unread notification
-                            <i class="fi-arrow-right"></i>
-                        </p>
-                    <?php } ?>
-            </div>
-        </li>
 
         <li class="dropdown notification-list">
             <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
