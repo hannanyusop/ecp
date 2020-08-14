@@ -27,12 +27,6 @@
                         <span> My Job </span>
                     </a>
                 </li>
-                <li>
-                    <a href="notification.php">
-                        <i class="fas fa-bell"></i>
-                        <span> Notification </span>
-                    </a>
-                </li>
                 <?php if($_SESSION['auth']['role'] == 1){ ?>
                 <li>
                     <a href="customer-list.php">

@@ -18,6 +18,8 @@
     }else{
         $condition = "";
     }
+
+    dd();
     $result = $db->query("SELECT *,j.id as job_id,u.id as user_id,s.fullname as handled_by,u.fullname as cname,u.email as cemail FROM jobs as j LEFT JOIN users as u ON j.customer_id=u.id LEFT JOIN users as s ON j.staff_id=s.id "." $condition ORDER BY status ASC");
 
 ?>
